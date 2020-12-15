@@ -84,6 +84,15 @@
 					}
 				]
 			};
+		},
+		async onLoad() {
+			const res = await this.$myRequest({
+				url: '/login'
+			})
+			if (res.code === 200) {
+				this.text = res.data.userName
+			}
+			console.log(res)
 		}
 	}
 </script>
@@ -182,9 +191,9 @@
 					}
 				}
 			}
-			
-			.menu-list{
-				.grid-img{
+
+			.menu-list {
+				.grid-img {
 					width: 60rpx;
 					height: 60rpx;
 					margin-bottom: 20rpx;

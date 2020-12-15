@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/class/class",
+    "pages/car/car",
+    "pages/my/my",
+    "components/search",
+    "components/swiper"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Mall",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff3976",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/nava.png",
+        "selectedIconPath": "static/img/navao.png",
+        "text": "专场"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "iconPath": "static/img/navb.png",
+        "selectedIconPath": "static/img/navbo.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "iconPath": "static/img/navc.png",
+        "selectedIconPath": "static/img/navco.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/img/navd.png",
+        "selectedIconPath": "static/img/navdo.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,5 +1,5 @@
 // 请求服务器地址
-const baseURL = 'http://localhost:8080'
+const baseURL = 'http://localhost:3000'
 // 向外暴露一个方法 myRequest
 export const myRequest = (options) => {
 	//加载loading
@@ -17,12 +17,13 @@ export const myRequest = (options) => {
 			// 请求成功
 			success: (res) => {
 				// 此判断可根据自己需要更改
-				if (res.data.status !== 1) {
-					return uni.showToast({
-						title: '获取数据失败！'
-					})
-				}
-				resolve(res)
+				// if (res.statusCode >= 200 && res.statusCode < 400) {
+				// 	uni.showToast({
+				// 		title: '获取数据成功！'
+				// 	})
+
+				// }
+				resolve(res.data)
 			},
 			// 请求失败
 			fail: (err) => {
