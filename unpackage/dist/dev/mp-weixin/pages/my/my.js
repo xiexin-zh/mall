@@ -235,7 +235,10 @@ var _default =
   },
   onLoad: function onLoad() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                 _this.$myRequest({
-                  url: '/login' }));case 2:res = _context.sent;
+                  url: '/login',
+                  data: {
+                    mobile: '13699999999' } }));case 2:res = _context.sent;
+
 
               if (res.code === 200) {
                 _this.text = res.data.userName;

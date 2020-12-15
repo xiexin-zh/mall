@@ -87,7 +87,10 @@
 		},
 		async onLoad() {
 			const res = await this.$myRequest({
-				url: '/login'
+				url: '/login',
+				data: {
+					mobile: '13699999999'
+				}
 			})
 			if (res.code === 200) {
 				this.text = res.data.userName
